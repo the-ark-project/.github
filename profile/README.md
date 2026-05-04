@@ -1,4 +1,9 @@
-<body style="background-color;#0B1C2E;">
+<head>
+  <style>
+    body { background-color: #0B1C2E; }
+  </style>
+</head>
+
 <p align="center">
   <a href="https://devsecai.io" target="_blank">
     <picture>
