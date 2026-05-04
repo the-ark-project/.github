@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://devsecai.io" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg">
-      <img alt="Tailwind CSS" src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg" width="350" height="70" style="max-width: 100%;">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/the-ark-project/.github/profile/project-ark-logo-dark.jpg">
+      <source media="(prefers-color-scheme: light)" srcset="https://github.com/the-ark-project/.github/profile/project-ark-logo-light.jpg">
+      <img alt="Project Ark" src="https://github.com/the-ark-project/.github/profile/project-ark-logo-light.jpg" width="350" height="70" style="max-width: 100%;">
     </picture>
   </a>
 </p>
 
-# Project Ark 🛰️
+# Project Ark
 
 **Developing a collective AI-Native defence playbook. Engineering sovereignty for the era of infinite code.**
 
