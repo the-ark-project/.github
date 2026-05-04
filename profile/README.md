@@ -8,6 +8,11 @@
   </a>
 </p>
 
+<p align="center">
+Developing a collective AI-Native defence playbook. Engineering sovereignty for the era of infinite code.
+</p>
+---
+
 # Project Ark
 
 **Developing a collective AI-Native defence playbook. Engineering sovereignty for the era of infinite code.**
