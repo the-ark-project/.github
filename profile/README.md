@@ -58,3 +58,77 @@ Project Ark is a vendor-neutral community designed for CISOs of software enginee
 **Tooling:** Standardised on DevSecAI Arko for reasoning-driven security - other tooling will be subject to the same onboarding criteria (zero cost to project participants).
 
 **Compliance:** Built for the 2026 AI Code of Practice and UK and EU "Secure by Design" mandates.
+
+## Structural overview
+
+```mermaid
+flowchart TB
+  subgraph sgForces["Reality shift"]
+    direction LR
+    F1["AI-assisted development<br/>+ autonomous agents"]
+    F2["Code volume grows<br/>exponentially"]
+    F3["Disclosure → exploit window<br/>collapses toward zero"]
+  end
+
+  F1 --> F2 --> F3
+
+  subgraph sgLegacy["Legacy playbook: compensating controls"]
+    direction LR
+    L1["Perimeter mindset"]
+    L2["Reactive patches & audits"]
+    L3["GRC / checklist 'security theatre'"]
+  end
+
+  L1 --> L2 --> L3
+
+  F3 --> AS["Attack surface expands faster<br/>than humans + manual tools can track"]
+  L2 --> AS
+
+  AS --> GAP{{"Breaking point:<br/>volume & speed vs. finite inspection capacity"}}
+
+  GAP --> TRAP["'Bandages on a compromised substrate'<br/>speed without deterministic structure"]
+
+  subgraph sgVicious["Reactive loop"]
+    direction TB
+    V1["Ship more, faster"]
+    V2["Thinner review & weaker guarantees"]
+    V3["More incidents → more patches"]
+    V1 --> V2 --> V3
+    V3 -->|"feeds"| V1
+  end
+
+  TRAP --> V1
+
+  subgraph sgVendor["Dependency trap"]
+    direction TB
+    R1["Subsidised frontier APIs feel 'free'"]
+    R2["Proprietary black boxes"]
+    R3["Operational + pricing lock-in"]
+  end
+
+  V3 --> R1 --> R2 --> R3
+
+  subgraph sgArk["Sovereign security direction"]
+    direction TB
+    A1["Secure Software Factory:<br/>observable, mistake-proofed pipelines"]
+    A2["Reasoning in the workflow before merge:<br/>structural fix, tests, validation"]
+    A3["Eliminate vulnerability classes —<br/>not an endless bug backlog"]
+    A4["Own models, data boundaries,<br/>means of production"]
+  end
+
+  GAP -.->|"engineer sovereignty,<br/>not more compliance theatre"| A1
+  V3 -.->|"break the loop"| A2
+  R3 -.->|"mitigate lock-in"| A4
+
+  classDef cdForce fill:#0f172a,stroke:#38bdf8,color:#e2e8f0
+  classDef cdLegacy fill:#1c1917,stroke:#a8a29e,color:#fafaf9
+  classDef cdBad fill:#450a0a,stroke:#f87171,color:#fecaca
+  classDef cdVendor fill:#3b0764,stroke:#c084fc,color:#f3e8ff
+  classDef cdArk fill:#052e16,stroke:#4ade80,color:#dcfce7
+
+  class F1,F2,F3 cdForce
+  class L1,L2,L3 cdLegacy
+  class AS,TRAP,V1,V2,V3,GAP cdBad
+  class R1,R2,R3 cdVendor
+  class A1,A2,A3,A4 cdArk
+```
