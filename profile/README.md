@@ -1,7 +1,4 @@
-<head>
-  <style>
-    body { background-color: #0B1C2E; }
-  </style>
+<head style="background-color: #0B1C2E;">
 </head>
 
 <p align="center">
