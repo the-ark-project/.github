@@ -1,3 +1,4 @@
+<body style="background-color;#0B1C2E;">
 <p align="center">
   <a href="https://devsecai.io" target="_blank">
     <picture>
@@ -11,6 +12,7 @@
 <p align="center">
 Developing a collective AI-Native defence playbook. Engineering sovereignty for the era of infinite code.
 </p>
+
 ---
 
 # Project Ark
